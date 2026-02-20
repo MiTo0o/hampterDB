@@ -55,7 +55,7 @@
 				onclick={() => open(name)}
 				aria-label="View {name}"
 			>
-				<img src="{base}/images/{name}" alt="Silly Hamster" loading="lazy" />
+                <img src="{base || ''}/images/{name}" alt="Silly Hamster" loading="lazy" />
 			</button>
 		{/each}
 	</div>
@@ -85,9 +85,7 @@
 					</a>
 					<button type="button" class="btn close" onclick={close} aria-label="Close">✕</button>
 				</div>
-
-				<img src="{base}/images/{selectedHamster}" alt="Full size hamster" />
-				
+                <img src="{base || ''}/images/{selectedHamster}"  alt="Full size hamster" />
 				<div class="info">
 					<code>{selectedHamster}</code>
 				</div>

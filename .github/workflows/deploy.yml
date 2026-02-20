@@ -18,7 +18,6 @@ jobs:
       - name: build
         # This environment variable tells SvelteKit your repo name for the base path
         env: 
-          BASE_PATH: ''
         run: npm run build
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
