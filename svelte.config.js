@@ -6,10 +6,10 @@ const config = {
     preprocess: vitePreprocess(),
     kit: {
         adapter: adapter({
-            fallback: '404.html'
+            fallback: '404.html' 
         }),
         paths: {
-            // Set this to an empty string for custom domains
+            // Force empty string. Do not use process.env or conditional logic.
             base: '' 
         }
     }
